@@ -1,0 +1,8 @@
+gym
+zmq
+pymongo
+Pillow
+pandas
+boto3
+requests
+numpy

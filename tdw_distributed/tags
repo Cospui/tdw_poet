@@ -1,0 +1,160 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Adam	optimizers.py	/^class Adam(Optimizer):$/;"	c
+CSVLogger	logger.py	/^class CSVLogger:$/;"	c
+DEFAULT_ENV	niches/model.py	/^    DEFAULT_ENV = Env_config($/;"	v
+DEFAULT_ENV	niches/tdwniches.py	/^DEFAULT_ENV = Env_config($/;"	v
+EMPTY_WINDOWS	niches/model.py	/^EMPTY_WINDOWS = 5$/;"	v
+ESOptimizer	es.py	/^class ESOptimizer:$/;"	c
+Env_config	niches/model.py	/^    Env_config = namedtuple('Env_config', [$/;"	v
+Env_config	niches/tdwniches.py	/^Env_config = namedtuple('Env_config', [$/;"	v
+EvalResult	es.py	/^EvalResult = namedtuple('EvalResult', ['returns', 'lengths'])$/;"	v
+EvalStats	es.py	/^EvalStats = namedtuple('StepStats', [$/;"	v
+Game	niches/model.py	/^Game = namedtuple('Game', ['env_name', 'time_factor', 'max_object',$/;"	v
+MEAN_MODE	niches/model.py	/^MEAN_MODE = False$/;"	v
+Model	niches/model.py	/^class Model:$/;"	c
+MultiESOptimizer	poet_algo.py	/^class MultiESOptimizer:$/;"	c
+Optimizer	optimizers.py	/^class Optimizer(object):$/;"	c
+POResult	es.py	/^POResult = namedtuple('POResult', [$/;"	v
+Policy	niches/model.py	/^class Policy(nn.Module):$/;"	c
+RENDER_DELAY	niches/model.py	/^RENDER_DELAY = False$/;"	v
+Reproducer	reproduce_ops.py	/^class Reproducer:$/;"	c
+SGD	optimizers.py	/^class SGD(Optimizer):$/;"	c
+SharedNoiseTable	noise.py	/^class SharedNoiseTable(object):$/;"	c
+SimpleSGD	optimizers.py	/^class SimpleSGD(Optimizer):$/;"	c
+StepStats	es.py	/^StepStats = namedtuple('StepStats', [$/;"	v
+TdwNiche	niches/tdwniches.py	/^class TdwNiche:$/;"	c
+__del__	es.py	/^    def __del__(self):$/;"	m	class:ESOptimizer	file:
+__init__	es.py	/^    def __init__(self,$/;"	m	class:ESOptimizer
+__init__	logger.py	/^    def __init__(self, fnm, col_names):$/;"	m	class:CSVLogger
+__init__	niches/model.py	/^    def __init__(self, game):$/;"	m	class:Model
+__init__	niches/model.py	/^    def __init__(self, max_object, unit_1, unit_2 ):$/;"	m	class:Policy
+__init__	niches/tdwniches.py	/^    def __init__(self, env_configs, seed, init='random', stochastic=False):$/;"	m	class:TdwNiche
+__init__	noise.py	/^    def __init__(self):$/;"	m	class:SharedNoiseTable
+__init__	optimizers.py	/^    def __init__(self, stepsize):$/;"	m	class:SimpleSGD
+__init__	optimizers.py	/^    def __init__(self, theta):$/;"	m	class:Optimizer
+__init__	optimizers.py	/^    def __init__(self, theta, stepsize, beta1=0.9, beta2=0.999, epsilon=1e-08):$/;"	m	class:Adam
+__init__	optimizers.py	/^    def __init__(self, theta, stepsize, momentum=0.9):$/;"	m	class:SGD
+__init__	poet_algo.py	/^    def __init__(self, args ):$/;"	m	class:MultiESOptimizer
+__init__	reproduce_ops.py	/^    def __init__(self, args):$/;"	m	class:Reproducer
+_compute_step	optimizers.py	/^    def _compute_step(self, theta, globalg, l2):$/;"	m	class:Adam
+_compute_step	optimizers.py	/^    def _compute_step(self, theta, globalg, l2):$/;"	m	class:Optimizer
+_compute_step	optimizers.py	/^    def _compute_step(self,theta,  globalg, l2):$/;"	m	class:SGD
+activation	niches/model.py	/^                    activation='tanh',$/;"	v
+add_env	es.py	/^    def add_env(self, env):$/;"	m	class:ESOptimizer
+add_env	niches/tdwniches.py	/^    def add_env(self, env):$/;"	m	class:TdwNiche
+add_env_to_niche	es.py	/^def add_env_to_niche(optim_id, env):$/;"	f
+add_noise_to_theta	es.py	/^def add_noise_to_theta( theta, noise_std, noise_list=None ):$/;"	f
+add_optimizer	poet_algo.py	/^    def add_optimizer(self, env, seed, created_at=0, model_params=None):$/;"	m	class:MultiESOptimizer
+adjust_envs_niches	poet_algo.py	/^    def adjust_envs_niches( self, iteration, steps_before_adjust, max_num_envs=None, max_children=8, max_admitted=1 ):$/;"	m	class:MultiESOptimizer
+batched_weighted_sum	stats.py	/^def batched_weighted_sum(weights, vecs, batch_size):$/;"	f
+broadcast_theta	es.py	/^    def broadcast_theta(self, theta):$/;"	m	class:ESOptimizer
+check_optimizer_status	poet_algo.py	/^    def check_optimizer_status(self):$/;"	m	class:MultiESOptimizer
+clean_dicts_before_iter	es.py	/^    def clean_dicts_before_iter(self):$/;"	m	class:ESOptimizer
+clean_up_ipyparallel	poet_algo.py	/^    def clean_up_ipyparallel(self):$/;"	m	class:MultiESOptimizer
+cleanup_worker	es.py	/^def cleanup_worker(optim_id):$/;"	f
+collect_eval_results	es.py	/^    def collect_eval_results(self, eval_results):$/;"	m	class:ESOptimizer
+collect_po_results	es.py	/^    def collect_po_results(self, po_results):$/;"	m	class:ESOptimizer
+compute	optimizers.py	/^    def compute(self, theta, globalg, l2):$/;"	m	class:SimpleSGD
+compute_centered_ranks	stats.py	/^def compute_centered_ranks(x):$/;"	f
+compute_grads	es.py	/^    def compute_grads(self, step_results, theta):$/;"	m	class:ESOptimizer
+compute_novelty_vs_archive	novelty.py	/^def compute_novelty_vs_archive(archive, niche, k):$/;"	f
+compute_ranks	stats.py	/^def compute_ranks(x):$/;"	f
+construct_niche_fns_from_env	poet_algo.py	/^def construct_niche_fns_from_env(args, env, seed):$/;"	f
+create_optimizer	poet_algo.py	/^    def create_optimizer(self, env, seed, created_at=0, model_params=None, is_candidate=False):$/;"	m	class:MultiESOptimizer
+debug	noise.py	/^debug = False$/;"	v
+delete_env	es.py	/^    def delete_env(self, env_name):$/;"	m	class:ESOptimizer
+delete_env	niches/tdwniches.py	/^    def delete_env(self, env_name):$/;"	m	class:TdwNiche
+delete_env_from_niche	es.py	/^def delete_env_from_niche(optim_id, env_name):$/;"	f
+delete_optimizer	poet_algo.py	/^    def delete_optimizer(self, optim_id):$/;"	m	class:MultiESOptimizer
+env2array	novelty.py	/^def env2array(env):$/;"	f
+euclidean_distance	novelty.py	/^def euclidean_distance(nx, ny, normalize=False):$/;"	f
+evaluate_theta	es.py	/^    def evaluate_theta(self, theta):$/;"	m	class:ESOptimizer
+evaluate_transfer	es.py	/^    def evaluate_transfer(self, optimizers, propose_with_adam=False):$/;"	m	class:ESOptimizer
+final_mode	niches/model.py	/^final_mode = False$/;"	v
+forward	niches/model.py	/^    def forward( self, x ):$/;"	m	class:Policy
+get	noise.py	/^    def get(self, i, dim):$/;"	m	class:SharedNoiseTable
+get_action	niches/model.py	/^    def get_action(self, x, t=0, mean_mode=False):$/;"	m	class:Model
+get_child_list	poet_algo.py	/^    def get_child_list(self, parent_list, max_children):$/;"	m	class:MultiESOptimizer
+get_chunk	es.py	/^    def get_chunk(self, tasks):$/;"	m	class:ESOptimizer
+get_new_env	poet_algo.py	/^    def get_new_env(self, list_repro):$/;"	m	class:MultiESOptimizer
+get_random_model_params	niches/model.py	/^    def get_random_model_params(self, stdev=0.1):$/;"	m	class:Model
+get_step	es.py	/^    def get_step(self, res, propose_with_adam=True, decay_noise=True, propose_only=False):$/;"	m	class:ESOptimizer
+get_theta_eval	es.py	/^    def get_theta_eval(self, res):$/;"	m	class:ESOptimizer
+ind_es_step	poet_algo.py	/^    def ind_es_step(self, iteration):$/;"	m	class:MultiESOptimizer
+initial_theta	niches/tdwniches.py	/^    def initial_theta(self):$/;"	m	class:TdwNiche
+initialize_worker	es.py	/^def initialize_worker():$/;"	f
+is_main_sc	niches/model.py	/^        is_main_sc=False,$/;"	v
+is_main_sc	niches/tdwniches.py	/^    is_main_sc=False,$/;"	v
+is_ramp_inside	niches/model.py	/^        is_ramp_inside=False)$/;"	v
+is_ramp_inside	niches/tdwniches.py	/^    is_ramp_inside=False)$/;"	v
+itergroups	stats.py	/^def itergroups(items, group_size):$/;"	f
+layers	niches/model.py	/^                    layers=[256, 128],$/;"	v
+load_model	niches/model.py	/^    def load_model(self, filename):$/;"	m	class:Model
+log	logger.py	/^    def log(self, **cols):$/;"	m	class:CSVLogger
+logger	es.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	logger.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	niches/model.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	noise.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	poet_algo.py	/^logger = logging.getLogger(__name__)$/;"	v
+m	niches/model.py	/^    m = Model(tdw_custom)$/;"	v
+make_env	niches/model.py	/^    def make_env(self, seed, env_config):$/;"	m	class:Model
+make_niche	poet_algo.py	/^        def make_niche():$/;"	f	function:construct_niche_fns_from_env.niche_wrapper
+max_object	niches/model.py	/^                    max_object=22,$/;"	v
+mutate	reproduce_ops.py	/^    def mutate(self, parent):$/;"	m	class:Reproducer
+name	niches/model.py	/^        name='default_env',$/;"	v
+name	niches/tdwniches.py	/^    name='default_env',$/;"	v
+name_env_config	reproduce_ops.py	/^def name_env_config(is_main_sc,$/;"	f
+niche_wrapper	poet_algo.py	/^    def niche_wrapper(configs, seed):  # in order not to create a new environment instantly$/;"	f	function:construct_niche_fns_from_env
+no_cones_target	niches/model.py	/^        no_cones_target=0,$/;"	v
+no_cones_target	niches/tdwniches.py	/^    no_cones_target=0,$/;"	v
+no_cube	niches/model.py	/^        no_cube=0,$/;"	v
+no_cube	niches/tdwniches.py	/^    no_cube=0,$/;"	v
+no_cube_stack_target	niches/model.py	/^        no_cube_stack_target=0,$/;"	v
+no_cube_stack_target	niches/tdwniches.py	/^    no_cube_stack_target=0,$/;"	v
+no_rectangles	niches/model.py	/^        no_rectangles=0, $/;"	v
+no_rectangles	niches/tdwniches.py	/^    no_rectangles=0, $/;"	v
+no_target	niches/model.py	/^        no_target=1,$/;"	v
+no_target	niches/tdwniches.py	/^    no_target=1,$/;"	v
+no_walled_target	niches/model.py	/^        no_walled_target=0,$/;"	v
+no_walled_target	niches/tdwniches.py	/^    no_walled_target=0,$/;"	v
+noise	noise_module.py	/^noise = SharedNoiseTable()$/;"	v
+noise_bias	niches/model.py	/^                    noise_bias=0.0,$/;"	v
+obj2id	niches/model.py	/^    def obj2id( self, model_name, color_id ):$/;"	m	class:Model
+optimize	poet_algo.py	/^    def optimize( self,$/;"	m	class:MultiESOptimizer
+output_noise	niches/model.py	/^                    output_noise=[False, False, False],$/;"	v
+output_size	niches/model.py	/^                    output_size=9,$/;"	v
+pass_dedup	poet_algo.py	/^    def pass_dedup(self, env_config):$/;"	m	class:MultiESOptimizer
+pass_mc	poet_algo.py	/^    def pass_mc(self, score):$/;"	m	class:MultiESOptimizer
+pick	reproduce_ops.py	/^    def pick(self, arr):$/;"	m	class:Reproducer
+pick_proposal	es.py	/^    def pick_proposal(self, checkpointing, reset_optimizer):$/;"	m	class:ESOptimizer
+populate_array	reproduce_ops.py	/^    def populate_array(self, arr, default_value,$/;"	m	class:Reproducer
+propose	optimizers.py	/^    def propose(self, theta, globalg, l2):$/;"	m	class:Adam
+record_video	niches/model.py	/^record_video = False$/;"	v
+remove_oldest	poet_algo.py	/^    def remove_oldest(self, num_removals):$/;"	m	class:MultiESOptimizer
+reset	optimizers.py	/^    def reset(self):$/;"	m	class:Adam
+rollout	niches/tdwniches.py	/^    def rollout(self, theta, random_state, eval=False):$/;"	m	class:TdwNiche
+rollout_batch	niches/tdwniches.py	/^    def rollout_batch(self, thetas, batch_size, random_state, eval=False):$/;"	m	class:TdwNiche
+run_eval_batch	es.py	/^def run_eval_batch(optim_id, batch_size, rs_seed):$/;"	f
+run_po_batch	es.py	/^def run_po_batch(optim_id, batch_size, rs_seed, noise_std):$/;"	f
+sample_index	noise.py	/^    def sample_index(self, stream, dim):$/;"	m	class:SharedNoiseTable
+save_policy	es.py	/^    def save_policy(self, policy_file, reset=False):$/;"	m	class:ESOptimizer
+save_to_logger	es.py	/^    def save_to_logger(self, iteration):$/;"	m	class:ESOptimizer
+set_model_params	niches/model.py	/^    def set_model_params(self, model_params):$/;"	m	class:Model
+set_theta	es.py	/^    def set_theta(self, theta, reset_optimizer=True):$/;"	m	class:ESOptimizer
+set_worker_theta	es.py	/^def set_worker_theta(theta, optim_id):$/;"	f
+setup_worker	es.py	/^def setup_worker(optim_id, make_niche):$/;"	f
+simulate	niches/model.py	/^def simulate(model, seed, train_mode=False, num_episode=1,$/;"	f
+start_chunk	es.py	/^    def start_chunk(self, runner, batches_per_chunk, batch_size, *args):$/;"	m	class:ESOptimizer
+start_step	es.py	/^    def start_step(self, theta=None):$/;"	m	class:ESOptimizer
+start_theta_eval	es.py	/^    def start_theta_eval(self, theta):$/;"	m	class:ESOptimizer
+tdw_custom	niches/model.py	/^tdw_custom = Game(  env_name="tdw_env",$/;"	v
+time_factor	niches/model.py	/^                    time_factor=0,$/;"	v
+transfer	poet_algo.py	/^    def transfer(self, propose_with_adam, checkpointing, reset_optimizer):$/;"	m	class:MultiESOptimizer
+update	optimizers.py	/^    def update(self, theta, globalg, l2):$/;"	m	class:Optimizer
+update_dicts_after_es	es.py	/^    def update_dicts_after_es(self, stats, self_eval_stats):$/;"	m	class:ESOptimizer
+update_dicts_after_transfer	es.py	/^    def update_dicts_after_transfer(self, source_optim_id, source_optim_theta, stats, keyword):$/;"	m	class:ESOptimizer

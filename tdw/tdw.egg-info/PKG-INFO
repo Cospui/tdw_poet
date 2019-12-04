@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: tdw
+Version: 1.4
+Summary: 3d virtual environment
+Home-page: https://github.com/neuroailab/TDWBase
+Author: Neuroscience and Artificial Intelligence Lab
+Author-email: UNKNOWN
+License: MIT
+Description: Required Python scripts for TDW.
+Keywords: unity simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
